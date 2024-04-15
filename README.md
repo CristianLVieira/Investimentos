@@ -116,15 +116,19 @@ Suponha um horizonte de investimento de $k = 3$ anos e um retorno efetivo simple
 Nesse exemplo temos:
 
 - Holding Period Return (HPR)
+
 $$ [HPR = 40\%\] $$
 
 - Effective Annual Rate (EAR)
+
 $$ [HPR = (EAR+1)^{k}-1 \Longrightarrow EAR = (1+HPR)^\frac{1}{k} \Longrightarrow EAR=(1+0,4)^\frac{1}{3} \Longrightarrow EAR=11,9\%\] $$
 
 - Annual Percentage Rate (APR)
+
 $$ [APR=HPR \frac{1}{k}-1 \Longrightarrow \frac{(EAR+1)^k-1}{k} \Longrightarrow \frac{(0,119+1)^3-1}{3} \Longrightarrow APR = 13,3\%\] $$
 
 - Continuous Compounded Rate (CCR)
+
 $$ [EAR=e^{CCR}-1 \Longrightarrow CCR = ln(EAR+1) \Longrightarrow CCR = 11,2\%\] $$
 
 Note ainda que, quando nos referimos a retornos auferidos (e não a retornos esperados), outras métricas de retorno são comuns:
