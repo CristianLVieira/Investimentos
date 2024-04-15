@@ -37,7 +37,11 @@ Adicionalmente:
   O retorno simples acumulado do portfólio não corresponde a soma dos retornos simples do portfólio ao longo do período:
 
 $$
-\frac{P_1}{P_0}
+ ln {\left(\frac{P_1}{P_0}\right)} +
+ ln {\left(\frac{P_2}{P_1}\right)} +
+ ln {\left(\frac{P_3}{P_2}\right)} + ... +
+ ln {\left(\frac{P_T}{P_{T-1}}\right)} =
+ ln {\left(\frac{P_T}{P_0}\right)}
 $$
 
 no entanto
