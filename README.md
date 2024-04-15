@@ -27,7 +27,28 @@ $$r_t = \frac{P_t - P_{t-1}}{P_{t-1}}\$$
 $$g_t = ln {\left (\frac{P-t}{P_{t-1}} \right)}\$$
 
 Qual das métricas é a mais adequada?
+
 A resposta para essa pegunta não é trivial, pois:
 
 - Para horizontes de investimento de longo prazo, retornos simples superestimam o retorno esperado
 - Para horizontes de curto prazo, retornos contínuos subestimam o retorno esperado.
+
+Adicionalmente:
+  O retorno simples acumulado do portfólio não corresponde a soma dos retornos simples do portfólio ao longo do período:
+$$
+ ln {\left(\frac{P_1}{P_0}\right)} +
+ ln {\left(\frac{P_2}{P_1}\right)} +
+ ln {\left(\frac{P_3}{P_2}\right)} + ... +
+ ln {\left(\frac{P_T}{P_{T-1}}\right)} =
+ ln {\left(\frac{P_T}{P_0}\right)}
+$$
+
+no entanto
+
+$$
+ \frac{P_1-P_0}{P_0} +
+ \frac{P_2-P_1}{P_1} +
+ \frac{P_3-P_2}{P_2} + ... +
+ \frac{P_T-P_{T-1}}{P_{T-1}} \neq
+ \frac{P_T-P_0}{P_0}
+ $$
