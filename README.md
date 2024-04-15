@@ -64,7 +64,46 @@ mas
 $$ [g_p = ln(1 + r_p) = ln(1 + \sum\limits_{i=1}^{N}{\omega_ir_i}) \neq \sum\limits_{i=1}^{N}{\omega_ig_i}\] $$
 
 Se assumirmos que os retornos contínuos sejam invariantes no tempo (i.e., i.i.d.) e normais, podemos estimar o retorno esperado projetando o retorno de um período ao longo de k períodos.
+
 Entretanto, se os retornos contínuos apresentarem uma distribuição normal, por construção os retornos simples $r_t + 1$ apresentarão uma distribuição lognormal pois $g_t = ln(r_t + 1)$.
+
 As análises das séries de tempo de retornos empregam retornos contínuos para avaliar os instrumentos individualmente.
+
 Posteriormente, esses retornos são convertidos em retornos simples para que possam ser utilizados na análise da performance de um portfólio.
+
 Obviamente, caso os retornos não tenham distribuição normal ou não sejam i.i.d. (e.g., heterocedasticidade, correlação serial, assimetria), estruturas adicionais devem ser incorporadas à análise das séries de tempo.
+
+### Exemplo
+
+Série de retornos contínuos diários de um dado ativo seja normal e i.i.d. tal que:
+
+$$ [g_t \sim N(\mu_d, \sigma_d^2)\] $$
+
+Lembrando que para retornos i.i.d.:
+
+$$ [Var(g_t + g_{t+1}) = Var(g_t) + Var(g_{t+1}) + 2Cov(g_t,g_{t+1})\] $$
+$$ [Var(g_t + g_{t+1}) = Var(g_t) + Var(g_{t+1})\] $$
+
+Podemos projetar o retorno contínuo semanal (5 dias úteis) por:
+
+$$ [g_t \sim N(5\mu_d, 5\sigma_d^2)\] $$
+
+De modo que
+
+$$ [{\mu_s = 5\mu_s} e\ {\sigma_s = \sqrt{5\mu_d}}\] $$
+
+Em seguida, simulamos 10.000 retornos aleatórios com distribuição $N(5\mu_d,5\sigma_d^2)$ e convertemos esses retornos contínuos em retornos simples utilizando:
+
+$$ [r_k=e^{g_k} -1\] $$
+
+Posteriormente, repetimos esse procedimento para outros $N-1$ ativos similares (i.i.d. e normalmente distribuídos).
+
+Finalmente, utilizando os retornos simples aleatórios gerados para os N ativos, calculamos os retornos semanais simulados do portfolio (por exemplo, assumindo alocações idênticas ou equal weight).
+
+$$ [r_p=\sum\limits_{i=1}^{N}{\omega_ir_i}\] $$
+
+Em nossa análise não consideramos outros elementos importantes como expectativas de inflação ou impactos tributários que são comuns em aplicações práticas.
+
+Até agora discutimos somente a métrica, apenas a definição da forma de capitalização dos retornos (simples ou contínua), e isso não é suficiente para realizarmos análises adequadas.
+
+Também são necessárias padronizações para facilitar a comparação de diferentes horizontes de investimento.
