@@ -34,7 +34,8 @@ A resposta para essa pegunta não é trivial, pois:
 - Para horizontes de curto prazo, retornos contínuos subestimam o retorno esperado.
 
 Adicionalmente:
-  O retorno simples acumulado do portfólio não corresponde a soma dos retornos simples do portfólio ao longo do período:
+
+O retorno simples acumulado do portfólio não corresponde a soma dos retornos simples do portfólio ao longo do período:
 
 $$
  ln {\left(\frac{P_1}{P_0}\right)} +
@@ -53,3 +54,17 @@ $$
  \frac{P_T-P_{T-1}}{P_{T-1}} \neq
  \frac{P_T-P_0}{P_0}
 $$
+
+O retorno contínuo do portfólio em um dado período não corresponde a média ponderada dos retornos contínuos dos seus ativos:
+
+$$ [r_p = \sum\limits_{i=1}^{N}{\omega_ir_i}\] $$
+
+mas
+
+$$ [g_p = ln(1 + r_p) = ln(1 + \sum\limits_{i=1}^{N}{\omega_ir_i}) \neq \sum\limits_{i=1}^{N}{\omega_ig_i}\] $$
+
+Se assumirmos que os retornos contínuos sejam invariantes no tempo (i.e., i.i.d.) e normais, podemos estimar o retorno esperado projetando o retorno de um período ao longo de k períodos.
+Entretanto, se os retornos contínuos apresentarem uma distribuição normal, por construção os retornos simples $r_t + 1$ apresentarão uma distribuição lognormal pois $g_t = ln(r_t + 1)$.
+As análises das séries de tempo de retornos empregam retornos contínuos para avaliar os instrumentos individualmente.
+Posteriormente, esses retornos são convertidos em retornos simples para que possam ser utilizados na análise da performance de um portfólio.
+Obviamente, caso os retornos não tenham distribuição normal ou não sejam i.i.d. (e.g., heterocedasticidade, correlação serial, assimetria), estruturas adicionais devem ser incorporadas à análise das séries de tempo.
