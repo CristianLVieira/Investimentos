@@ -82,6 +82,7 @@ $$ [g_t \sim N(\mu_d, \sigma_d^2)\] $$
 Lembrando que para retornos i.i.d.:
 
 $$ [Var(g_t + g_{t+1}) = Var(g_t) + Var(g_{t+1}) + 2Cov(g_t,g_{t+1})\] $$
+
 $$ [Var(g_t + g_{t+1}) = Var(g_t) + Var(g_{t+1})\] $$
 
 Podemos projetar o retorno contínuo semanal (5 dias úteis) por:
