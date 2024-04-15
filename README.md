@@ -36,7 +36,7 @@ A resposta para essa pegunta não é trivial, pois:
 Adicionalmente:
   O retorno simples acumulado do portfólio não corresponde a soma dos retornos simples do portfólio ao longo do período:
 $$
- {(\frac{P_1}{P_0})} 
+ \frac{P_1}{P_0} 
 $$
 
 no entanto
