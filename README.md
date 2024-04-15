@@ -108,3 +108,31 @@ Em nossa análise não consideramos outros elementos importantes como expectativ
 Até agora discutimos somente a métrica, apenas a definição da forma de capitalização dos retornos (simples ou contínua), e isso não é suficiente para realizarmos análises adequadas.
 
 Também são necessárias padronizações para facilitar a comparação de diferentes horizontes de investimento.
+
+### Exemplo
+ 
+Suponha um horizonte de investimento de $k = 3$ anos e um retorno efetivo simples (i.e. um linear holding period return) de 40\%.
+
+Nesse exemplo temos:
+
+- Holding Period Return (HPR)
+$$ [HPR = 40\%\] $$
+
+- Effective Annual Rate (EAR)
+$$ [HPR = (EAR+1)^{k}-1 \Longrightarrow EAR = (1+HPR)^\frac{1}{k} \Longrightarrow EAR=(1+0,4)^\frac{1}{3} \Longrightarrow EAR=11,9\%\] $$
+
+- Annual Percentage Rate (APR)
+$$ [APR=HPR \frac{1}{k}-1 \Longrightarrow \frac{(EAR+1)^k-1}{k} \Longrightarrow \frac{(0,119+1)^3-1}{3} \Longrightarrow APR = 13,3\%\] $$
+
+- Continuous Compounded Rate (CCR)
+$$ [EAR=e^{CCR}-1 \Longrightarrow CCR = ln(EAR+1) \Longrightarrow CCR = 11,2\%\] $$
+
+Note ainda que, quando nos referimos a retornos auferidos (e não a retornos esperados), outras métricas de retorno são comuns:
+
+- Compounded Annual Growth Rate (CAGR)
+- Internal Rate of Return (IRR)
+- Return on Investment (ROI)
+
+É importante lembrar que quando analisamos retornos esperados, estamos em geral nos referindo a retornos em excesso (ou excess return) em relação a uma determinada taxa livre risco (i.e., o custo de oportunidade).
+
+O valor esperado desses retornos em excesso são denominados prêmios de risco (ou risk premia) que, como veremos posteriormente, são elementos essenciais na elaboração de bons portfólios de investimentos.
